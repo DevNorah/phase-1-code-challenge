@@ -2,6 +2,10 @@ function Grader() {
     let name = prompt ("Enter Students name:");
     let grade = prompt ("Enter grade:");
     
+    if(isNaN(grade)){
+        alert (`Please enter a valid number`);
+    }
+
 
     if (grade > 79) {
         grade = "A"
